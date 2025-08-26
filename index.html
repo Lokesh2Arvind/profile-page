@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokesh Arvind C G — Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Lokesh</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a href="#skills" class="nav-link" data-section="skills">
+                    <i class="fas fa-code"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#projects" class="nav-link" data-section="projects">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#achievements" class="nav-link" data-section="achievements">
+                    <i class="fas fa-trophy"></i>
+                    <span>Achievements</span>
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Lokesh Arvind C G</span>
+                        <span class="title-subtitle">Blockchain & Web3 Developer</span>
+                        <span class="title-subtitle">Competitive Programmer</span>
+                    </h1>
+                    <p class="hero-description">
+                        Mathematics & Computing student at IIT (BHU) with CPI 9.05/10, 
+                        specializing in blockchain development, smart contracts, and competitive programming.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                            <i class="fas fa-rocket"></i>
+                            View Projects
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                            <i class="fas fa-paper-plane"></i>
+                            Get In Touch
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number" data-target="9.05">0</span>
+                                <span class="stat-label">CPI</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="1632">0</span>
+                                <span class="stat-label">Codeforces</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="1000">0</span>
+                                <span class="stat-label">Problems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-description">
+                            A passionate Mathematics & Computing student at IIT (BHU) with CPI 9.05/10, 
+                            specializing in blockchain development, smart contracts, and competitive programming. 
+                            Selected as Atlassian Software Engineer Intern for Summer 2026.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>IIT (BHU) Student</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Atlassian Intern</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-code"></i>
+                                <span>Competitive Programmer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="education-card">
+                            <h3>Education</h3>
+                            <div class="education-item">
+                                <div class="education-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <div class="education-details">
+                                    <h4>IIT (BHU), Varanasi</h4>
+                                    <p>Integrated Dual Degree, Mathematics & Computing</p>
+                                    <span class="cpi">CPI: 9.05/10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category" data-category="blockchain">
+                        <div class="skill-header">
+                            <i class="fas fa-link"></i>
+                            <h3>Blockchain & Web3</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-tag">Solidity</span>
+                            <span class="skill-tag">Foundry</span>
+                            <span class="skill-tag">Ethereum</span>
+                            <span class="skill-tag">Chainlink</span>
+                            <span class="skill-tag">MetaMask</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="programming">
+                        <div class="skill-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Programming</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Go</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="95"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="web">
+                        <div class="skill-header">
+                            <i class="fas fa-globe"></i>
+                            <h3>Web Development</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-category="ml">
+                        <div class="skill-header">
+                            <i class="fas fa-brain"></i>
+                            <h3>ML & Data</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Keras</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Pandas</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-project="fundme">
+                        <div class="project-image">
+                            <div class="project-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>FundMe DApp</h3>
+                            <p>Decentralized crowdfunding platform with MetaMask on Ethereum testnets.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Solidity</span>
+                                <span class="tech-tag">Foundry</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Ethers.js</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="lottery">
+                        <div class="project-image">
+                            <div class="project-icon">
+                                <i class="fas fa-dice"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Lottery Smart Contract</h3>
+                            <p>Verifiable randomness via Chainlink VRF with automated payouts.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Solidity</span>
+                                <span class="tech-tag">Foundry</span>
+                                <span class="tech-tag">Chainlink</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="transactease">
+                        <div class="project-image">
+                            <div class="project-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>TransactEase</h3>
+                            <p>P2P debt optimization & real-time D3.js visualization with WebAssembly.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">WebAssembly</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Honors & Achievements</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="achievements-grid">
+                    <div class="achievement-card academic">
+                        <div class="achievement-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3>Academic Excellence</h3>
+                        <ul class="achievement-list">
+                            <li>AIR 3923, JEE Advanced 2022</li>
+                            <li>AIR 4930, JEE Main 2022</li>
+                        </ul>
+                    </div>
+
+                    <div class="achievement-card competitive">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Competitive Programming</h3>
+                        <ul class="achievement-list">
+                            <li>Codeforces Expert (1632)</li>
+                            <li>CodeChef 4★ (1929)</li>
+                            <li>Global Rank 42 & 67 in Starters</li>
+                            <li>1000+ problems solved</li>
+                        </ul>
+                    </div>
+
+                    <div class="achievement-card leadership">
+                        <div class="achievement-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Leadership</h3>
+                        <ul class="achievement-list">
+                            <li>Event Coordinator, MACS Society</li>
+                            <li>Coordinated "Numerator vs Denominator" math contest (200+ participants)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>lokesh.arvindcg.mat22@iitbhu.ac.in</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91-8248655242</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Varanasi, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <div class="social-grid">
+                            <a href="https://github.com/Lokesh2Arvind" target="_blank" class="social-link github">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://codeforces.com/profile/-LOKI-" target="_blank" class="social-link codeforces">
+                                <i class="fas fa-code"></i>
+                                <span>Codeforces</span>
+                            </a>
+                            <a href="https://codechef.com/users/lokesh_arvind" target="_blank" class="social-link codechef">
+                                <i class="fas fa-trophy"></i>
+                                <span>CodeChef</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Lokesh Arvind C G. All rights reserved.</p>
+                <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
